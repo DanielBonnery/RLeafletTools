@@ -9,10 +9,6 @@ always_allow_html: yes
 ---
 
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="/RLeafletTools/assets/css/style.css?v=b4c9dba77c911685c5c84df1e8199b15e7c95f15">
-    <link rel="stylesheet" type="text/css" href="/RLeafletTools/assets/css/print.css" media="print">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
