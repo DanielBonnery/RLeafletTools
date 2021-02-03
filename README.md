@@ -1,24 +1,27 @@
----
-title: "`RLeafletTools`"
-author: "dbonnery"
-date: "2021-02-03"
-output: 
-  html_document:
-    keep_md: true
-always_allow_html: yes
----
+`RLeafletTools`
+================
+Daniel Bonnéry
+2021-02-03
 
-# `RLeafletTools` 
+`RLeafletTools`
+===============
 
-## Install
+Install
+-------
 
-```r
+``` r
 devtools::install_github("DanielBonnery/RLeafletTools")
 ```
 
-## Demonstration
+Main function.
+--------------
 
-```r
+The function `addpiechartclustermarkers2` creates pie chart cluster markers in leaflet as in <https://danielbonnery.github.io/RLeafletTools/>.
+
+Demonstration
+-------------
+
+``` r
 library(RLeafletTools)
 library(leaflet)
 library(dplyr)
@@ -28,6 +31,3 @@ lf<-leaflet(breweries91)%>%
   addTiles()%>%addpiechartclustermarkers2(.data=breweries91,.colors=c("red","green","blue"),group="goodbeer")
 lf
 ```
-
-![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1-1.png)
-
