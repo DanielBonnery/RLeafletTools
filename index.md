@@ -8,7 +8,82 @@ output:
 always_allow_html: yes
 ---
 
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/RLeafletTools/assets/css/style.css?v=b4c9dba77c911685c5c84df1e8199b15e7c95f15">
+    <link rel="stylesheet" type="text/css" href="/RLeafletTools/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
+		
+	<!-- Require Leaflet -->
+	<!-- Load leaflet for R-->
+<script src="https://rstudio.github.io/leaflet/libs/jquery/jquery.min.js"></script>
+<link href="https://rstudio.github.io/leaflet/libs/bootstrap/css/flatly.min.css" rel="stylesheet" />
+<script src="https://rstudio.github.io/leaflet/libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://rstudio.github.io/leaflet/libs/bootstrap/shim/html5shiv.min.js"></script>
+<script src="https://rstudio.github.io/leaflet/libs/bootstrap/shim/respond.min.js"></script>
+<script src="https://rstudio.github.io/leaflet/libs/navigation/tabsets.js"></script>
+<link href="https://rstudio.github.io/leaflet/libs/highlightjs/default.css" rel="stylesheet" />
+<script src="https://rstudio.github.io/leaflet/libs/highlightjs/highlight.js"></script>
+<script src="https://rstudio.github.io/leaflet/libs/htmlwidgets/htmlwidgets.js"></script>
+<link href="https://rstudio.github.io/leaflet/libs/leaflet/leaflet.css" rel="stylesheet" />
+<script src="https://rstudio.github.io/leaflet/libs/leaflet/leaflet.js"></script>
+<link href="https://rstudio.github.io/leaflet/libs/leafletfix/leafletfix.css" rel="stylesheet" />
+<script src="https://rstudio.github.io/leaflet/libs/Proj4Leaflet/proj4-compressed.js"></script>
+<script src="https://rstudio.github.io/leaflet/libs/Proj4Leaflet/proj4leaflet.js"></script>
+<link href="https://rstudio.github.io/leaflet/libs/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-binding/leaflet.js"></script>
+<link href="https://rstudio.github.io/leaflet/libs/leaflet-measure/leaflet-measure.css" rel="stylesheet" />
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-measure/leaflet-measure.min.js"></script>
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-graticule/L.Graticule.js"></script>
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-graticule/Graticule-binding.js"></script>
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-terminator/L.Terminator.js"></script>
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-terminator/Terminator-binding.js"></script>
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-providers/leaflet-providers_1.9.0.js"></script>
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-providers-plugin/leaflet-providers-plugin.js"></script>
+<link href="https://rstudio.github.io/leaflet/libs/leaflet-minimap/Control.MiniMap.min.css" rel="stylesheet" />
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-minimap/Control.MiniMap.min.js"></script>
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-minimap/Minimap-binding.js"></script>
+<link href="https://rstudio.github.io/leaflet/libs/leaflet-easybutton/easy-button.css" rel="stylesheet" />
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-easybutton/easy-button.js"></script>
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-easybutton/EasyButton-binding.js"></script>
+<link href="https://rstudio.github.io/leaflet/libs/leaflet-markercluster/MarkerCluster.css" rel="stylesheet" />
+<link href="https://rstudio.github.io/leaflet/libs/leaflet-markercluster/MarkerCluster.Default.css" rel="stylesheet" />
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-markercluster/leaflet.markercluster.js"></script>
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-markercluster/leaflet.markercluster.freezable.js"></script>
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-markercluster/leaflet.markercluster.layersupport.js"></script>
+<link href="https://rstudio.github.io/leaflet/libs/ionicons/ionicons.min.css" rel="stylesheet" />
+
+
+<!-- leaflet.extras package / check https://github.com/bhaskarvk/leaflet.extras/tree/master/inst/htmlwidgets/build-->
+<!-- You may need to include new refs -->
+<!-- leaflet.extras package / heatmap -->
+<script src="https://dieghernan.github.io/js/leaflet_extras/lfx-heat/lfx-heat-prod.js"></script>
+<script src="https://dieghernan.github.io/js/leaflet_extras/lfx-heat/lfx-heat-bindings.js"></script>	
+	
+	<!-- End Leaflet -->
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>RLeafletTools</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="RLeafletTools" />
+<meta name="author" content="dbonnery" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://danielbonnery.github.io/RLeafletTools/" />
+<meta property="og:url" content="https://danielbonnery.github.io/RLeafletTools/" />
+<meta property="og:site_name" content="RLeafletTools" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-02-03T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="RLeafletTools" />
+<script type="application/ld+json">
+{"@type":"WebSite","author":{"@type":"Person","name":"dbonnery"},"headline":"RLeafletTools","dateModified":"2021-02-03T00:00:00+00:00","datePublished":"2021-02-03T00:00:00+00:00","url":"https://danielbonnery.github.io/RLeafletTools/","name":"RLeafletTools","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
 
 # `RLeafletTools` 
 
