@@ -27,7 +27,10 @@
 #'   group="goodbeer2")
 #' map
 
-addpiechartclustermarkers<-function(map,.data,.colors,group,...){
+addpiechartclustermarkers<-function(map,
+                                    .data,group,
+                                    .colors=ggplot2::scale_fill_brewer()$palette(nlevels(factor(.data[[group]]))),
+                                    ,...){
   
 getColor <- function(x) {.colors[.data[[group]]]}
 
@@ -108,11 +111,15 @@ jsscript3<-
 #' data("breweries91",package="leaflet")
 #' breweries91$goodbeer<-sample(as.factor(c("terrific","marvelous","culparterretaping")),nrow(breweries91),replace=T)
 #' leaflet(breweries91) %>%addTiles()%>%addpiechartclustermarkers2(.data=breweries91,.colors=c("red","green","blue"),group="goodbeer")
+#' leaflet(breweries91) %>%addTiles()%>%addpiechartclustermarkers2(.data=breweries91,group="goodbeer")
 
-
-addpiechartclustermarkers2<-function(map,.data,.colors,group,clusterId="toto",...){
+addpiechartclustermarkers2<-function(map,
+                                     .data,
+                                     group,
+                                     .colors=ggplot2::scale_color_discrete()$palette(nlevels(factor(.data[[group]]))),
+                                     clusterId="toto",...){
   
-  getColor <- function(x) {.colors[.data[[group]]]}
+  getColor <- function(x) {.colors[as.factor(.data[[group]])]}
   
   icons <- awesomeIcons(
     icon = 'ios-close',

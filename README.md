@@ -3,9 +3,6 @@
 Daniel Bonnéry
 2021-02-03
 
-`RLeafletTools`
-===============
-
 Install
 -------
 
