@@ -30,7 +30,7 @@
 addpiechartclustermarkers<-function(map,
                                     .data,group,
                                     .colors=ggplot2::scale_fill_brewer()$palette(nlevels(factor(.data[[group]]))),
-                                    ,...){
+                                    ...){
   
 getColor <- function(x) {.colors[.data[[group]]]}
 
